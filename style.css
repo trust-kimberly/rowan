@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'gt_america';
+    color: white;
+    transition: all 0.4s;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'gt_america';
+    src: url(fonts/GT-America-Regular/GT-America-Regular.otf);
+    src: url(fonts/GT-America-Regular/GT-America-Regular.ttf);
+}
+
+h1 {
+    font-size: 36px;
+    margin: 1vh 0 3vh;
+}
+
+h2 {
+    font-size: 42px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    display: grid;
+    margin: 4vh 1.5vw;
+    grid-template-columns: 48.5vw 48.5vw;
+    grid-template-rows: auto;
+    grid-template-areas: "left right";
+    border-top: solid 3px;
+    border-top-color: inherit;
+    z-index: 2;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+    width: 25vw;
+    display: flex;
+    margin-top: 1.5vh;
+    justify-content: space-between;
+}
+
+.landing {
+    background-image: url("media/rowan-landing.jpg");
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#work {
+    height: 80vh;
+    display: grid;
+    margin: 15vh 1.5vw 5vh;
+    border-top: solid 1px;
+    border-top-color: inherit;
+    grid-template-columns: 12vw 36.5vw 48.5vw;
+    grid-template-rows: 78vh;
+    grid-template-areas: "section title image";
+}
+
+.section {
+    grid-area: section;
+    margin: 2vh 1.5vw 0 0;
+}
+
+.title {
+    grid-area: title;
+    overflow: scroll;
+    margin: 2vh 1.5vw 0 0;
+}
+
+.image {
+    grid-area: image;
+    margin: 3vh 0 0;
+    background-image: url(media/rowan1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+img {
+    width: 48.5vw;
+    height: 77vh;
+    object-fit: cover;
+    position: absolute;
+    display: none;
+}
