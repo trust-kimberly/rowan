@@ -3,11 +3,13 @@ body {
     padding: 0;
     font-family: 'gt_america';
     color: white;
+    background-color: black;
     transition: all 0.4s;
 }
 
 * {
     scroll-behavior: smooth;
+    cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym761.ani), url(https://ani.cursors-4u.net/symbols/sym-8/sym761.png), auto !important;
 }
 
 @font-face {
@@ -24,6 +26,10 @@ h1 {
 h2 {
     font-size: 42px;
     margin: 0;
+}
+
+h2:hover {
+    color: white;
 }
 
 h3 {
@@ -95,7 +101,7 @@ header {
 .image {
     grid-area: image;
     margin: 3vh 0 0;
-    background-image: url(media/rowan1.jpg);
+    background-image: url(media/rowan-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
