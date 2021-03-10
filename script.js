@@ -2,6 +2,7 @@
 
 $(window).scroll(function() {
     if($(window).scrollTop() + $(window).height() >= $(document).height()) {
+        $( '.image' ).css("background-image", "url(media/rowan-1.jpg)");
         $('body').css("color", "#ff3c00");
         $('body').css("background-color", "black");
     } 
