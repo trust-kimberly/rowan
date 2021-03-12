@@ -2,9 +2,9 @@
 
 $(window).scroll(function() {
     if($(window).scrollTop() + $(window).height() >= $(document).height()) {
-        $( '.image' ).css("background-image", "url(media/rowan-1.jpg)");
-        $('body').css("color", "#ff3c00");
-        $('body').css("background-color", "black");
+        $( '.image' ).css("background-image", "url(media/rowan-2.jpg)");
+        $('body').css("color", "darkslategray");
+        $('body').css("background-color", "#d6c2b5");
     } 
    if($(window).scrollTop() + $(window).height() < $(document).height()) {
         $('body').css("color", "white");
@@ -14,6 +14,11 @@ $(window).scroll(function() {
 // change project thumbnail image on hover
 
 $(document).ready(function(){
+    $('#title-2').hover(function() {
+        $( '.image' ).css("background-image", "url(media/rowan-2.jpg)");
+        $('body').css("color", "darkslategray");
+        $('body').css("background-color", "#d6c2b5");
+        });   
     $('#title-1').hover(function() {
         $( '.image' ).css("background-image", "url(media/rowan-1.jpg)");
         $('body').css("color", "#ff3c00");
@@ -89,3 +94,18 @@ $(document).ready(function(){
         $('body').css("background-color", "darkslategray");
         });				
 });
+
+
+// go to slide 
+(function () {
+    function getSlideParameter(key) {
+        key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+        var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+        var slide = match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        if (Math.floor(slide) == slide && $.isNumeric(slide))
+            return parseInt(slide);
+        else
+            return 0;//if 'slide' parameter is not present or doesn't have correct values load 0th slide
+    }
+    $('#carousel-example-generic').carousel(getSlideParameter('slide'));
+})();

@@ -5,11 +5,11 @@ body {
     color: white;
     background-color: black;
     transition: all 0.4s;
+    cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym761.ani), url(https://ani.cursors-4u.net/symbols/sym-8/sym761.png), auto !important;
 }
 
 * {
     scroll-behavior: smooth;
-    cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym761.ani), url(https://ani.cursors-4u.net/symbols/sym-8/sym761.png), auto !important;
 }
 
 @font-face {
@@ -52,6 +52,7 @@ header {
     border-top: solid 3px;
     border-top-color: inherit;
     z-index: 2;
+    top: 0;
 }
 
 .left {

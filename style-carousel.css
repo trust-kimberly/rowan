@@ -1,0 +1,154 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'gt_america';
+    transition: all 0.4s;
+    cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym761.ani), url(https://ani.cursors-4u.net/symbols/sym-8/sym761.png), auto !important;
+    background-color: #fdf4f8;
+    color: blue;
+  }
+  
+* {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'gt_america';
+    src: url(fonts/GT-America-Regular/GT-America-Regular.otf);
+    src: url(fonts/GT-America-Regular/GT-America-Regular.ttf);
+}
+
+h1 {
+    font-size: 36px;
+    margin: 1vh 0 3vh;
+    font-weight: bold;
+    color: blue;
+}
+
+h1:hover {
+    color: thistle;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 2vh 0 18px;
+    color: blue;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    color: blue;
+}
+
+h4 {
+    margin-bottom: 16px;
+    color: midnightblue;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: thistle;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* header  */
+
+header {
+    position: fixed;
+    display: grid;
+    margin: 4vh 1.5vw;
+    grid-template-columns: 48.5vw 48.5vw;
+    grid-template-rows: auto;
+    grid-template-areas: "left right";
+    border-top: solid 3px;
+    border-top-color: inherit;
+    z-index: 2;
+    top: 0;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+    width: 25vw;
+    display: flex;
+    margin-top: 1.5vh;
+    justify-content: space-between;
+}
+  /* bootstrap carousel */
+  
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .carousel {
+    margin: 15vh 1.5vw 5vh;
+    height: 80vh;
+    border-top: solid 1px;
+    border-top-color: inherit;
+  }
+  
+  .carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev {
+    display: flex;
+  }
+
+  .carousel-inner {
+    height: 85vh;
+    width: 98.5vw;
+    overflow: scroll;
+  }
+
+  .carousel-inner > .item > .label {
+    height: 78vh;
+    width: 20vw;
+    text-align: left;
+    color: black;
+    white-space: normal;
+    overflow: scroll;
+    margin-right: 1.5vw;
+  }
+  
+  .carousel-inner > .item > img {
+    height: 75vh;
+    max-height: 75vh;
+    width: auto;
+    max-width: 74vw;
+    margin: 3vh auto 0;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel-control.left,
+  .carousel-control.right {
+    background-image: none;
+    z-index: 3;
+  }
+  
+  .cursor-icons {
+    display: none;
+  }
+  
+  .carousel-control {
+    width: 40%;
+    margin-left: 20vw;
+  }
+  
+  .carousel .right:hover {
+    cursor: e-resize;
+  }
+  
+  .carousel .left:hover {
+    cursor: w-resize;
+  }
+  
