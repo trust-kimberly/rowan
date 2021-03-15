@@ -117,3 +117,48 @@ img {
     position: absolute;
     display: none;
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    h1 {
+        font-size: 90px;
+    }
+
+    header {
+        display: block;
+        border-top: none;
+        margin: 2vh 2vw;
+        position: absolute;
+        color: lavender;
+    }
+
+    .left {
+        width: 96vw;
+    }
+
+    .right {
+        display: block;
+        margin-left: 2vw;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .section {
+        display: none;
+    }
+
+    #work {
+        height: auto;
+        margin: 2vh 2vw;
+        display: block;
+        border-top: none;
+    }
+
+}

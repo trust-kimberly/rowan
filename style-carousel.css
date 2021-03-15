@@ -152,3 +152,76 @@ header {
     cursor: w-resize;
   }
   
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  header {
+    display: block;
+    border-top: none;
+    margin: 2vh 2vw 0;
+    position: relative;
+    color: lavender;
+  }
+
+  .right {
+    display: block;
+    margin-left: 1vw;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .carousel {
+    position: relative;
+    margin: 2vh 2vw;
+    height: auto;
+    border-top: none;
+    display: block;
+  }
+
+  .carousel-inner {
+    height: auto;
+    width: 96vw;
+    padding-bottom: 10vh;
+    display: block;
+  }
+
+  .carousel-inner > .active {
+    display: block;
+  }
+
+  .carousel-inner > .item > .label {
+    height: 78vh;
+    width: 96vw;
+    text-align: left;
+    color: black;
+    white-space: normal;
+    overflow: scroll;
+    margin-right: 1.5vw;
+  }
+
+  .carousel-inner > .item > img {
+    height: auto;
+    max-height: 75vh;
+    width: 100vw;
+    max-width: 74vw;
+    margin: 3vh auto 0;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+  }
+
+}
