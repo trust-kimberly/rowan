@@ -70,9 +70,8 @@ header {
 .landing {
     background-image: url("media/rowan-landing.jpg");
     height: 100vh;
-    position: relative;
     background-position: center;
-    background-size: cover;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
