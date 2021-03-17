@@ -76,20 +76,20 @@ header {
     background-attachment: fixed;
 }
 
-#work {
+#about {
     height: 80vh;
     display: grid;
     margin: 15vh 1.5vw 5vh;
     border-top: solid 1px;
     border-top-color: inherit;
-    grid-template-columns: 12vw 36.5vw 48.5vw;
+    grid-template-columns: 12vw 85vw;
     grid-template-rows: 78vh;
-    grid-template-areas: "section title image";
+    grid-template-areas: "section title";
 }
 
 .section {
     grid-area: section;
-    margin: 2vh 1.5vw 0 0;
+    margin: 2vh 0 0;
 }
 
 .title {
@@ -98,65 +98,51 @@ header {
     margin: 2vh 1.5vw 0 0;
 }
 
-.image {
-    grid-area: image;
-    margin: 3vh 0 0;
-    background-image: url(media/rowan-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
-
-}
-
-img {
-    width: 48.5vw;
-    height: 77vh;
-    object-fit: cover;
-    position: absolute;
-    display: none;
-}
+/* responsive */
 
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
-    h1 {
-        font-size: 90px;
-    }
-
-    header {
-        display: block;
-        border-top: none;
-        margin: 2vh 2vw;
-        position: absolute;
-        color: lavender;
-    }
-
-    .left {
-        width: 96vw;
-    }
-
-    .right {
-        display: block;
-        margin-left: 2vw;
-        font-size: 24px;
-        font-weight: bold;
-    }
-
-    .image {
-        display: none;
-    }
-
     .section {
         display: none;
     }
 
-    #work {
+    #about {
         height: auto;
-        margin: 2vh 2vw;
+        margin: 4vh 3vw;
         display: block;
         border-top: none;
     }
+
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    header {
+        display: block;
+        border-top: none;
+        margin: 2vh 2vw 0;
+        position: relative;
+        color: lavender;
+    }
+    
+    .right {
+        display: block;
+        margin-left: 1vw;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
 }
