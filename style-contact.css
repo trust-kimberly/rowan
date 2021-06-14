@@ -98,6 +98,12 @@ header {
     margin: 2vh 1.5vw 0 0;
 }
 
+a:hover {
+    color: thistle;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 a.contact-link:hover {
     transition: all 0.4s ease-in-out;
     color: blue;

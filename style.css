@@ -42,6 +42,12 @@ a {
     text-decoration: none;
 }
 
+a.nav-links:hover {
+    color: thistle;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 header {
     position: fixed;
     display: grid;
@@ -101,7 +107,7 @@ header {
 .image {
     grid-area: image;
     margin: 3vh 0 0;
-    background-image: url(media/rowan-1.jpg);
+    background-image: url(media/rowan-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

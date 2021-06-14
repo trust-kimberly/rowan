@@ -42,6 +42,12 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: thistle;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 header {
     position: fixed;
     display: grid;
