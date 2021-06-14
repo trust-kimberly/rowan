@@ -103,7 +103,7 @@ header {
     grid-area: title;
     overflow: scroll;
     margin: 2vh 1.5vw 0 0;
-}
+} 
 
 .image {
     grid-area: image;
