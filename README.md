@@ -1,5 +1,5 @@
 # Rowan
 
-This is for my glassblowing partner in crime, Rowan.
+This is for a multimedia, glassblowing extraordinaire, Rowan.
 
-https://trust-kimberly.github.io/rowan/
+https://rowanraskin.com/
