@@ -23,6 +23,7 @@ h1 {
     margin: 1vh 0 3vh;
     font-weight: bold;
     color: blue;
+    display: inline-block;
 }
 
 h1:hover {

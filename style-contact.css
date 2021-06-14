@@ -21,6 +21,7 @@ body {
 h1 {
     font-size: 36px;
     margin: 1vh 0 3vh;
+    display: inline-block;
 }
 
 h2 {

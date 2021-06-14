@@ -1,4 +1,4 @@
-//change font color on scroll
+// change font color on scroll
 
 $(window).scroll(function() {
     if($(window).scrollTop() + $(window).height() >= $(document).height()) {
@@ -95,8 +95,8 @@ $(document).ready(function(){
         });				
 });
 
-
 // go to slide 
+
 (function () {
     function getSlideParameter(key) {
         key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
