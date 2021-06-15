@@ -8,10 +8,6 @@ body {
     cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym761.ani), url(https://ani.cursors-4u.net/symbols/sym-8/sym761.png), auto !important;
 }
 
-* {
-    scroll-behavior: smooth;
-}
-
 @font-face {
     font-family: 'gt_america';
     src: url(fonts/GT-America-Regular/GT-America-Regular.otf);
