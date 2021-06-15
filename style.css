@@ -43,6 +43,7 @@ a.nav-links:hover {
     color: thistle;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 
 header {
@@ -80,13 +81,13 @@ header {
 }
 
 #work {
-    height: 80vh;
+    height: 82vh;
     display: grid;
     margin: 15vh 1.5vw 5vh;
-    border-top: solid 1px;
+    border-top: solid 3px;
     border-top-color: inherit;
     grid-template-columns: 12vw 36.5vw 48.5vw;
-    grid-template-rows: 78vh;
+    grid-template-rows: 100%;
     grid-template-areas: "section title image";
 }
 
@@ -97,13 +98,27 @@ header {
 
 .title {
     grid-area: title;
-    overflow: scroll;
+    /* overflow: scroll; */
     margin: 2vh 1.5vw 0 0;
+    overflow-y: auto;
 } 
+
+.title::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.title::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+
+.title::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .4);
+}
 
 .image {
     grid-area: image;
-    margin: 3vh 0 0;
+    margin: 2vh 0 0;
     background-image: url(media/rowan-2.jpg);
     background-position: center;
     background-repeat: no-repeat;

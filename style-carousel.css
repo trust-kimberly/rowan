@@ -59,6 +59,7 @@ a:hover {
     color: thistle;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 
 /* header  */
@@ -95,9 +96,9 @@ header {
   }
   
   .carousel {
-    margin: 15vh 1.5vw 5vh;
-    height: 80vh;
-    border-top: solid 1px;
+    margin: 13vh 1.5vw 5vh;
+    height: 82vh;
+    border-top: solid 3px;
     border-top-color: inherit;
   }
   
@@ -106,13 +107,13 @@ header {
   }
 
   .carousel-inner {
-    height: 85vh;
+    height: 87vh;
     width: 98.5vw;
     overflow: scroll;
   }
 
   .carousel-inner > .item > .label {
-    height: 78vh;
+    height: 82vh;
     width: 20vw;
     text-align: left;
     color: black;
@@ -122,8 +123,7 @@ header {
   }
   
   .carousel-inner > .item > img {
-    height: 75vh;
-    max-height: 75vh;
+    height: 79vh;
     width: auto;
     max-width: 74vw;
     margin: 3vh auto 0;
@@ -163,7 +163,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 
   h2 {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 10px;
   }
 

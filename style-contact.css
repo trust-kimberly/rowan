@@ -82,10 +82,10 @@ header {
 }
 
 #contact {
-    height: 80vh;
+    height: 82vh;
     display: grid;
-    margin: 15vh 1.5vw 5vh;
-    border-top: solid 1px;
+    margin: 13vh 1.5vw 5vh;
+    border-top: solid 3px;
     border-top-color: inherit;
     grid-template-columns: 12vw 85vw;
     grid-template-rows: 78vh;
@@ -107,6 +107,7 @@ a:hover {
     color: thistle;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 
 a.contact-link:hover {
@@ -137,8 +138,7 @@ a.contact-link:hover {
     }
     
     h2 {
-        font-size: 16px;
-        margin-bottom: 10px;
+        font-size: 24px;
     }
     
     h4 {
