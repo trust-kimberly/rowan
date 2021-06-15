@@ -88,6 +88,11 @@ header {
     margin-top: 1.5vh;
     justify-content: space-between;
 }
+
+#work-btn {
+  display: block;
+}
+
   /* bootstrap carousel */
   
   .container {

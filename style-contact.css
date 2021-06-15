@@ -72,6 +72,10 @@ header {
     justify-content: space-between;
 }
 
+#work-btn {
+    display: block;
+}
+
 .landing {
     background-image: url("media/rowan-landing.jpg");
     height: 100vh;
